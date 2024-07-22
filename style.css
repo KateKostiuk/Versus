@@ -1,0 +1,296 @@
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Lato", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+/* header styles */
+.header {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+}
+.link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 155%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #999;
+  transition: all 0.4s;
+  display: inline-block;
+}
+
+.link:hover {
+  color: #00d6b4;
+  scale: 1.1;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  gap: 40px;
+}
+/* banner styles */
+.banner {
+  background-image: url(pictures/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  align-items: center;
+}
+.banner h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 29px;
+  max-width: 465px;
+}
+.banner a {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 146%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00d6b4;
+  border: 1px solid #00d6b4;
+  border-radius: 3px;
+  padding: 10px 26px;
+  transition: all 0.5s;
+  /* padding-top: 10px;
+  padding-right: 26px;
+  padding-bottom: 10px;
+  padding-left: 26px;*/
+}
+.banner a:hover {
+  color: white;
+  background-color: #00d6b4;
+}
+.banner .container {
+  text-align: center;
+}
+
+/* works secrion styles */
+.works {
+  padding-top: 49px;
+  padding-bottom: 101px;
+  background-color: #222;
+}
+.works h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 22px;
+}
+
+.cards img {
+  width: calc(100% / 3 - 40px / 3);
+  transition: all 0.5s;
+}
+.cards img:hover {
+  filter: invert(80%) hue-rotate(40deg);
+}
+/* footer section styles */
+.footer {
+  padding-top: 35px;
+  padding-bottom: 37px;
+  background-color: #222;
+}
+.footer-logo {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c2c2c2;
+  margin-bottom: 10px;
+}
+.smaller-logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #999;
+}
+.smaller-logo a {
+  color: #999;
+}
+
+@media (max-width: 715px) {
+  .cards img {
+    width: calc(100% / 2 - 20px / 2);
+  }
+}
+
+@media (max-width: 475px) {
+  .cards img {
+    width: 100%;
+  }
+  .menu-list {
+    gap: 10px;
+  }
+  .banner h1 {
+    font-size: 38px;
+  }
+}
